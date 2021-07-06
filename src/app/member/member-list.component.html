@@ -1,0 +1,40 @@
+<div class='card'>
+  <div class='card-header'>
+    {{pageTitle}}
+  </div>
+  <div class='card-body'>
+    <div class='table-responsive'>
+      <table class='table text-black'
+             *ngIf='members.length'>
+        <thead>
+          <tr>
+            <th>MemberID</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let member of members'>
+            <td>
+              <a [routerLink]="['/members', member.memberId]">
+                {{ member.memberId }}
+              </a>
+            </td>
+            <td>{{ member.firstName }}</td>
+            <td>{{ member.lastName }}</td>
+            <td>{{ member.age }}</td>
+            <td>{{ member.gender }}</td>
+            <td>{{ member.address }}</td>
+            <td>{{ member.phone }}</td>
+            <td><i (click)="deleteMember(member.memberId)" class="fa fa-trash fa-2x text-danger">&nbsp;</i></td>
+          </tr>
+        </tbody>
+       </table>
+    </div>
+  </div>
+</div>
