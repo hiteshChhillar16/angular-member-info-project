@@ -1,7 +1,13 @@
 <div class='card'>
   <div class='card-header'>
     <div class="row">
-      <div class="col-4">{{pageTitle}} </div>
+      <div class="col-4">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text btn btn-large btn-primary text-white" (click)="getRandomUser()" id="btnGroupAddon"><i class="fa fa-user">&nbsp;Generate Random User</i></div>
+          </div>
+        </div>
+      </div>
       <div class="col-8 pull-right"><img [src]="member.thumbnail" alt="No user generated" class="img-thumbnail"></div>
     </div>
   </div>
@@ -11,57 +17,48 @@
       <div class='col-md-8'>
         <div class='row'>
           <div class='col-md-4'>First Name:</div>
-          <input type="text" class="form-control" [value]="member.firstName">
+          <input type="text" class="form-control" [value]="member.firstName" placeholder="Readonly input here..." readonly>
         </div>
         <div class='row'>
           <div class='col-md-4'>Last Name:</div>
-          <input type="text" class="form-control" [value]="member.lastName">
+          <input type="text" class="form-control" [value]="member.lastName" placeholder="Readonly input here..." readonly>
         </div>
         <div class='row'>
           <div class='col-md-4'>Age:</div>
-          <input type="text" class="form-control" [value]="member.age">
+          <input type="text" class="form-control" [value]="member.age" placeholder="Readonly input here..." readonly>
         </div>
         <div class='row'>
           <div class='col-md-4'>Email:</div>
-          <input type="email" class="form-control" [value]="member.email" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="email" class="form-control" [value]="member.email" aria-describedby="emailHelp" placeholder="Readonly input here..." readonly>
         </div>
         <div class='row'>
           <div class='col-md-4'>Gender:</div>
-          <input type="text" class="form-control" [value]="member.gender">
+          <input type="text" class="form-control" [value]="member.gender" placeholder="Readonly input here..." readonly>
         </div>
         <div class='row'>
           <div class='col-md-4'>Dob:</div>
-          <input type="text" class="form-control" [value]="member.dob">
+          <input type="text" class="form-control" [value]="member.dob" placeholder="Readonly input here..." readonly>
         </div>
         <div class='row'>
           <div class='col-md-4'>Phone:</div>
-          <input type="text" class="form-control" [value]="member.phone">
+          <input type="text" class="form-control" [value]="member.phone" placeholder="Readonly input here..." readonly>
         </div>
         <div class='row'>
           <div class='col-md-4'>Address:</div>
-          <input type="text" class="form-control" [value]="member.address">
+          <input type="text" class="form-control" [value]="member.address" placeholder="Readonly input here..." readonly>
         </div>
         <div class='row'>
           <div class='col-md-4'>City:</div>
-          <input type="text" class="form-control" [value]="member.city">
+          <input type="text" class="form-control" [value]="member.city" placeholder="Readonly input here..." readonly>
         </div>                  
         <div class='row'>
           <div class='col-md-4'>Postcode:</div>
-          <input type="text" class="form-control" [value]="member.postcode">
+          <input type="text" class="form-control" [value]="member.postcode" placeholder="Readonly input here..." readonly>
         </div>   
         <div class='row'>
           <div class='col-md-4'>State:</div>
-          <input type="text" class="form-control" [value]="member.state">
+          <input type="text" class="form-control" [value]="member.state" placeholder="Readonly input here..." readonly>
         </div>              
-      </div>
-      <div class="col-4">
-        <div class="row pull-right">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <div class="input-group-text btn btn-large btn-primary text-white" (click)="getRandomUser()" id="btnGroupAddon"><i class="fa fa-user">&nbsp;Generate Random User</i></div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
