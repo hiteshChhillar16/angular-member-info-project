@@ -1,0 +1,18 @@
+{
+    "/api": {
+      "target": "https://z0peuaze8f.execute-api.us-east-2.amazonaws.com/dev",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    },
+    "/randomuser": {
+      "target": "https://randomuser.me/api/",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/randomuser": ""
+      }
+    }
+  }
